@@ -2,16 +2,19 @@
 <head>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.1.0"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-vis"></script>
-
 </head>
 <body>
     <h1>Handwriting Classifier!</h1>
-    <canvas id="canvas" width="280" height="280" style="position:absolute;top:100;left:100;border:8px solid;"></canvas>
-    <img id="canvasimg" style="position:absolute;top:10%;left:52%;width=280;height=280;display:none;">
+    <div style="position:relative;">
+        <canvas id="canvas" width="280" height="280" style="border:8px solid;"></canvas>
+        <img id="canvasimg" style="position:absolute;top:0;left:0;width:280px;height:280px;display:none;">
+    </div>
     <input type="button" value="classify" id="sb" size="48" style="position:absolute;top:400;left:100;">
     <input type="button" value="clear" id="cb" size="23" style="position:absolute;top:400;left:180;">
-	<h2><br>It might lag a bit, because we are using webgl!</br></h2>
-	<h2>Please wait until the training is finished</h2>
+    <br></br>
+	<br></br>
+	<h2>It might lag a bit because we are using webgl!</h2>
+    <h2>Please wait until the training is finished</h2>
     <script src="data.js" type="module"></script>
     <script src="script.js" type="module"></script>
 </body>
